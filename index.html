@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            color: white;
+        }
+        @media screen and (max-width: 32rem) {
+            * {
+                background-color: darkblue;
+            }
+        }
+        @media screen and (min-width: 32rem) and (max-width: 65rem) {
+            * {
+                background-color: darkred;
+            }
+        }
+        @media screen and (min-width: 65rem) {
+            * {
+                background-color: darkgreen;
+            }
+        }
+        @media screen and (-webkit-min-device-pixel-ratio: 1) {
+            * {
+                font-size: 1.5rem;
+            }
+        }
+        @media screen and (-webkit-min-device-pixel-ratio: 2) {
+            * {
+                font-size: 1rem;
+            }
+        }
+        @media screen and (max-width: 32rem) {
+
+            /* mobile */
+
+            @media screen and (-webkit-min-device-pixel-ratio: 1) {
+                .mobile {
+                    display: block;
+                }
+                .mobileRetina {
+                    display: none;
+                }
+                .tablet {
+                    display: none;
+                }
+                .tabletRetina {
+                    display: none;
+                }
+                .desktop {
+                    display: none;
+                }
+                .desktopRetina {
+                    display: none;
+                }
+            }
+
+            /* mobile hires */
+
+            @media screen and (-webkit-min-device-pixel-ratio: 2) {
+                .mobile {
+                    display: none;
+                }
+                .mobileRetina {
+                    display: block;
+                }
+                .tablet {
+                    display: none;
+                }
+                .tabletRetina {
+                    display: none;
+                }
+                .desktop {
+                    display: none;
+                }
+                .desktopRetina {
+                    display: none;
+                }
+            }
+        }
+        @media screen and (min-width: 32rem) and (max-width: 65rem) {
+
+            /* tablet */
+
+            @media screen and (-webkit-min-device-pixel-ratio: 1) {
+                .mobile {
+                    display: none;
+                }
+                .mobileRetina {
+                    display: none;
+                }
+                .tablet {
+                    display: block;
+                }
+                .tabletRetina {
+                    display: none;
+                }
+                .desktop {
+                    display: none;
+                }
+                .desktopRetina {
+                    display: none;
+                }
+            }
+
+            /* tablet hires */
+
+            @media screen and (-webkit-min-device-pixel-ratio: 2) {
+                .mobile {
+                    display: none;
+                }
+                .mobileRetina {
+                    display: none;
+                }
+                .tablet {
+                    display: none;
+                }
+                .tabletRetina {
+                    display: block;
+                }
+                .desktop {
+                    display: none;
+                }
+                .desktopRetina {
+                    display: none;
+                }
+            }
+        }
+        @media screen and (min-width: 65rem) {
+
+            /* desktop */
+
+            @media screen and (-webkit-min-device-pixel-ratio: 1) {
+                .mobile {
+                    display: none;
+                }
+                .mobileRetina {
+                    display: none;
+                }
+                .tablet {
+                    display: none;
+                }
+                .tabletRetina {
+                    display: none;
+                }
+                .desktop {
+                    display: block;
+                }
+                .desktopRetina {
+                    display: none;
+                }
+            }
+
+            /* desktop hires */
+
+            @media screen and (-webkit-min-device-pixel-ratio: 2) {
+                .mobile {
+                    display: none;
+                }
+                .mobileRetina {
+                    display: none;
+                }
+                .tablet {
+                    display: none;
+                }
+                .tabletRetina {
+                    display: none;
+                }
+                .desktop {
+                    display: none;
+                }
+                .desktopRetina {
+                    display: block;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mobile">
+        mobile
+    </div>
+    <div class="mobileRetina">
+        mobile
+        <br>
+        hires
+    </div>
+    <div class="tablet">
+        tablet
+    </div>
+    <div class="tabletRetina">
+        tablet
+        <br>
+        hires
+    </div>
+    <div class="desktop">
+        desktop
+    </div>
+    <div class="desktopRetina">
+        desktop
+        <br>
+        hires
+    </div>
+</body>
+</html>
