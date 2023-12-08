@@ -6,30 +6,33 @@
     <style>
         * {
             color: white;
+            font-size: 1.2rem;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         @media screen and (max-width: 48rem) {
-            * {
+            .mobile, .mobileRetina, .tablet, .tabletRetina, .desktop, .desktopRetina {
                 background-color: darkblue;
             }
         }
         @media screen and (min-width: 48rem) and (max-width: 85.375rem) {
-            * {
+            .mobile, .mobileRetina, .tablet, .tabletRetina, .desktop, .desktopRetina {
                 background-color: darkred;
             }
         }
         @media screen and (min-width: 85.375rem) {
-            * {
+            .mobile, .mobileRetina, .tablet, .tabletRetina, .desktop, .desktopRetina {
                 background-color: darkgreen;
             }
         }
         @media screen and (-webkit-min-device-pixel-ratio: 1) {
-            * {
-                font-size: 1.2rem;
+            body {
+                background-image: url(https://i.stack.imgur.com/zWfJ5.jpg);
             }
         }
         @media screen and (-webkit-min-device-pixel-ratio: 2) {
-            * {
-                font-size: 1.2rem;
+            body {
+                background-image: url(https://i.stack.imgur.com/Bhpd8.jpg);
             }
         }
         @media screen and (max-width: 48rem) {
